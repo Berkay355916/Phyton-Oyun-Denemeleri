@@ -2,9 +2,11 @@ import random
 import time
 
 def Intro():
-    print("Vaktiyle çok yüksek surları olan ve  kral tarafından yönetilen bir şehir devleti varmış."
-          " Halk huzur içinde yaşıyormuş..."
-          "Günlerden bir gün ormandan gelen iki ejderha şehrin iki giriş kapısına birden oturmuşlar. ")
+    print("Vaktiyle çok yüksek surları olan ve  Voldemort  tarafından yönetilen bir şehir devleti varmış."
+          " Halk çok mutsuzmuş halk çile ve acı içinde yaşıyormuş..."
+          "Ülkenin gençleri bu ülkeden kaçmak için yollar ve çareler arıyormuş."
+          "Ülkeden kaçmanın tek yolu surların iki tarafında bulunan koruyucu ejderhalardan geçmekmiş.")
+        
 
     time.sleep(3)     
     print('''Önünde iki tane yol var.
