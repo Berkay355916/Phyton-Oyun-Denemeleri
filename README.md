@@ -7,7 +7,7 @@
     OYUN KARAKTERİMİZ PERNİA BU KORKUNÇ ŞEHİRDEN KAÇMAK İÇİN GÜNLERCE PLAN YAPTI.
                  AMA BU ŞEHRİN KORKUNÇ BİR YANI DAHA VAR.
           ŞEHİR KORUYUCU EJDERHALAR...
-        İYİ NİYETLİ EJDERHA MOONSTONE VE CANİ,KÖTÜ NİYETLİ,TEK HEDEFİ KAÇMAYA ÇALIŞAN GENÇLERİ YEMEK İSTEYEN EJDERHA HADES...
+        İYİ NİYETLİ EJDERHA MOONSTONE VE CANİ,KÖTÜ NİYETLİ,TEK HEDEFİ KAÇMAYA ÇALIŞAN GENÇLERİ YEMEK OLAN EJDERHA HADES...
              BU İKİ EJDERHA ŞEHRİN İKİ ÇIKIŞ KAPISINI KORUMAKTA.
             PEKİ SEN DOĞRU YOLU ŞEÇİP PERNİA'YI BU ÜRKÜNÇ VOLDEMORT ŞEHRİNDEN KURTARABİLECEK MİSİN ?
                   ŞEÇİMLERİNİ YAP...
@@ -64,6 +64,21 @@
 
                              
                                     İyi Eğlenceler Dileriz...
+  
+                
+                                     
+                                        Snake
+                            
+                    Yılların eskitemediği çocukluk oyunumuz Snake oyununu bir de bizden deneyin.
+                       Yem yedikçe hızlandığınız kontrolün gittikçe güçleştiği ve yemleri yiyip büyüdükçe büyüyen ve hızlanan yılanımız seni bekliyor.
 
+                       Bakalım En Yüksek skoru yapabilecek misin ?
+
+                                İyi Eğlenceler Dileriz...
+
+
+
+
+                            Emeği Geçenler Berkay İBRAHİM
                             
 
