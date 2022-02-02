@@ -41,8 +41,14 @@
 
 
 
+           
+                                                ARABUL
+                     Arabul bir sayı tahmin etme oyunu.Tahmin gücüne inanıyorsan robotumuz Arabulun hangi sayıyı tahmin ettiğini bulmayı dene.
+                            Sayı tahmin aralığını istediğin kadar değiştirebilirsin.
+                         Oyunun 4 tane modu var. -> Kolay,Orta,Zor,İmkansız.
+                               Eğer yorulup artık bu oyunu bitiremeyeceğini düşündüğün an "pes" yazıp bu oyunu sonlandırabilirsin 
 
-                    EMEĞİ GEÇENLER:Berkay İbrahim
+                                      İyi Eğlenceler...
                 
 
 
