@@ -1,114 +1,102 @@
-#Catch Turtles Oyunu
+
 
 
 import turtle
 import random
 
-pencere = turtle.Screen()
-pencere.screensize(600,600)
-pencere.title("Tosbağa kovalamaca")
-pencere.bgcolor("blue")
-pencere.tracer(2) 
+win = turtle.Screen()
+win.screensize(600, 600)
+win.title('Catch Turtles')
+win.bgpic("underwater.gif")
+win.bgcolor('black')
+win.tracer(2)
 
-
-oyuncu=turtle.Turtle()
-oyuncu.color("red")
-oyuncu.shape("triangle")
-oyuncu.shapesize(3)
-oyuncu.penup() 
-
+player = turtle.Turtle()
+player.color('white')
+player.shape('triangle')
+player.shapesize(3)
+player.penup()
 
 score = 0
 
-yaziPuan=turtle.Turtle
-yaziPuan.speed(0)
-yaziPuan.shape("square")
-yaziPuan.color("white")
-yaziPuan.penup()
-yaziPuan.hideturtle()
-yaziPuan.goto(-200,200)
-yaziPuan.write("Puan: {}" .format(score), align="center",  font = ('Courier',24,"normal"))
+pen = turtle.Turtle()
+pen.speed(0)
+pen.shape("square")
+pen.color("white")
+pen.penup()
+pen.hideturtle()
+pen.goto(-200, 220)
+pen.write("Puan: {}".format(score), align="center", font=("Courier", 24, "normal"))
+
+speed = 1
+
+pen2 = turtle.Turtle()
+pen2.speed(0)
+pen2.shape("square")
+pen2.color("white")
+pen2.penup()
+pen2.hideturtle()
+pen2.goto(200, 220)
+pen2.write("Hız: {}".format(speed), align="center", font=("Courier", 24, "normal"))
+
+maxGoals = 5
+goals = []
+for i in range(maxGoals):
+    goals.append(turtle.Turtle())
+    goals[i].penup()
+    goals[i].color('yellow')
+    goals[i].shape('turtle')
+    goals[i].speed(0)
+    goals[i].setposition(random.randint(-300, 300), random.randint(-300, 300))
 
 
-
-speed =1 
-hizPuan=turtle.Turtle
-hizPuan.speed(0)
-hizPuan.shape("square")
-hizPuan.color("white")
-hizPuan.penup()
-hizPuan.hideturtle()
-hizPuan.goto(200,-200)
-hizPuan.write("Hız: {}" .format(score), align="center",  font = ('Courier',24,"normal"))
-
-def solaDon():
-    oyuncu.left(30)
-
-def sagaDon():
-    oyuncu.right(30)
-
-def hiziArtir():
-     global speed 
-     speed=speed+1
-     hizPuan.clear()
-     hizPuan.write("Hız: {}" .format(score), align="center",  font = ('Courier',24,"normal"))
+def turnLeft():
+    player.left(30)
 
 
-def hiziAzalt():
+def turnRight():
+    player.right(30)
+
+
+def increaseSpeed():
     global speed
-    speed=speed-1
-    hizPuan.clear()
-    hizPuan.write("Hız: {}" .format(score), align="center",  font = ('Courier',24,"normal"))
+    speed = speed + 1
+    pen2.clear()
+    pen2.write("Hız: {}".format(speed), align="center", font=("Courier", 24, "normal"))
 
 
+def decreaseSpeed():
+    global speed
+    speed = speed - 1
+    pen2.clear()
+    pen2.write("Hız: {}".format(speed), align="center", font=("Courier", 24, "normal"))
 
 
-pencere.listen()
-pencere.onkey(solaDon,'Left')
-pencere.onkey(sagaDon,'Right')
-pencere.onkey(hiziArtir,'Up')
-pencere.onkey(hiziAzalt,'Down') 
+win.listen()
+win.onkey(turnLeft, 'Left')
+win.onkey(turnRight, 'Right')
+win.onkey(increaseSpeed, 'Up')
+win.onkey(decreaseSpeed, 'Down')
 
+while True:
+    player.forward(speed)
 
-maxHedef= 5
-hedefler =[]
-for i in range (maxHedef):
-    hedefler.append=turtle.Turtle()
-    hedefler[i].penup()
-    hedefler[i].color("purple")
-    hedefler[i].shape("turtle")
-    hedefler[i].speed(5)
-    hedefler[i].setposition(random.randint(-300,300)),random.randint(-300,300)
+    if player.xcor() > 300 or player.xcor() < -300:
+        player.right(180)
+    if player.ycor() > 300 or player.ycor() < -300:
+        player.right(180)
 
+    for i in range(maxGoals):
+        goals[i].forward(1)
 
+        if goals[i].xcor() > 500 or goals[i].xcor() < -500:
+            goals[i].right(random.randrange(150, 250))
+        if goals[i].ycor() > 500 or goals[i].ycor() < -500:
+            goals[i].right(random.randrange(150, 250))
 
-
-
-
-
-
-while True :
-    oyuncu.forward(1)
-
-    if oyuncu.xcor() > 400 or oyuncu.xcor() < -400:
-       oyuncu.right(180)
-    if oyuncu.ycor() > 400 or oyuncu.ycor() < -400:
-       oyuncu.right(180)
-    
-
-    for i in range (maxHedef):
-        hedefler[i]. forward (1)
-        if hedefler[i].xcor() > 500 or hedefler[i].xcor() <-500: 
-           hedefler[i].right(random.randint(150,200))
-        if hedefler[i].ycor() > 500 or hedefler[i].ycor() <-500:
-           hedefler[i].right(random.randint(150,200))
-            
-
-
-
-    if oyuncu.distance(hedefler[i]) <40:
-        hedefler[i].setposition(random.randint(-300,300)),random.randint(-300,300)
-        hedefler[i.right(random.randint(0,360))]
-        score= score + 1
-        yaziPuan.clear()
-        yaziPuan.write("Puan: {}" .format(score), align="center",  font = ('Courier',24,"normal"))
+        if player.distance(goals[i]) < 40:
+            goals[i].setposition(random.randint(-290, 290), random.randint(-290, 290))
+            goals[i].right(random.randint(0, 360))
+            score = score + 1
+            pen.clear()
+            pen.write("Puan: {}".format(score), align="center", font=("Courier", 24, "normal"))
