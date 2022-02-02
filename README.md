@@ -51,5 +51,19 @@
                                       İyi Eğlenceler...
                 
 
+   
+      
 
+
+
+            
+                                             Catch Turtles
+
+                    Bu oyunumuzda Hedefimiz önümüzde duran kaplumbağaları yakalamak.
+                         Hızımızı ayarlayabildiğimiz yön değiştirebildiğimiz bu oyunda olabildiğince kaplumbağa yakalayıp puanları topla.
+
+                             
+                                    İyi Eğlenceler Dileriz...
+
+                            
 
