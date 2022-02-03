@@ -34,6 +34,6 @@ while oyun_devam_ediyor_mu:  #Döngü başlatmak için while komutunu kullanıyo
             print("Dostum Böyle Bir Komut Yok Tekrar Dene")
           
         
-         
+         #Bu oyun için Sayın Hocamız Ömer Nuri Çam'ın derste anlattıkları örnek alınarak oluşturulmuştur.
 
         

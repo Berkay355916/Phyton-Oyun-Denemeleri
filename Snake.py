@@ -7,7 +7,7 @@ delay = 0.16 # Gecikme süresini Bursada yaşadığımız için plakamız olarak
  
 pencere = turtle.Screen()
 pencere.title('Snake') #Ekran Başlığı olarak oyun adını veriyoruz.
-pencere.bgcolor('lime') #Ekran rengini misket limonu yeşili yapıyoruz.
+pencere.bgcolor('brown') #Ekran rengini misket limonu yeşili yapıyoruz.
 pencere.setup(width=600, height=600) #Ekran büyüklüğünü ayarlıyoruz
 pencere.tracer(0) #Pencere güncellemesini engelliyoruz.Güncellemeyi ilerleyen kodlarda yapacağız.
  
@@ -33,7 +33,7 @@ puan = 0
 yaz = turtle.Turtle()  #Puan göstergemizi belirliyoruz.
 yaz.speed(0)
 yaz.shape("square") 
-yaz.color("white") #Rengi beyaz olarak şeçtik
+yaz.color("black") #Rengi siyah olarak şeçtik.
 yaz.penup() 
 yaz.hideturtle()
 yaz.goto(0, 260)
@@ -138,3 +138,5 @@ while True:
             hiz = 0.5
  
     time.sleep(delay)
+        
+                       #Bu oyun için Phyton Engineer kanalından örnek alınmış, Üzerinden farklı değişimler ve dizaynlar uygulanmıştır.

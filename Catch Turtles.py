@@ -100,3 +100,6 @@ while True:
             score = score + 1
             pen.clear()
             pen.write("Puan: {}".format(score), align="center", font=("Courier", 24, "normal"))
+
+
+            #Turtle modülünü anlayabilmek için TokyoEdtech Kanalının videoları izlenmiştir.
