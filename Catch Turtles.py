@@ -12,8 +12,8 @@ win.bgcolor('black')   #Ekran tonunu siyaha ayarlıyoruz.
 win.tracer(2)
 
 player = turtle.Turtle()
-player.color('white')   #Oyuncumuzun imlecinin rengini veriyoruz.
-player.shape('triangle') #Oyuncu imlecinin şeklini üçgen yapıyoruz.
+player.color('yellow')   #Oyuncumuzun imlecinin rengini veriyoruz.
+player.shape('circle') #Oyuncu imlecinin şeklini daire yapıyoruz.
 player.shapesize(3) #Oyuncu imlecinin boyutunu belirledik.
 player.penup() #Oyuncu sadece hareket edicek bunu sağlıyoruz.
 
@@ -22,7 +22,7 @@ score = 0
 pen = turtle.Turtle()
 pen.speed(0) #Puan göstergemizi oluşturuyoruz.
 pen.shape("square") 
-pen.color("white") #Puan göstergesinin rengini oluşturuyoruz.
+pen.color("purple") #Puan göstergesinin rengini oluşturuyoruz.
 pen.penup()
 pen.hideturtle() #Puan göstergesini sabitleyip saklıyoruz.
 pen.goto(-200, 220)
@@ -33,7 +33,7 @@ speed = 1
 pen2 = turtle.Turtle()
 pen2.speed(0) #Hız göstergemizi oluşturduk.
 pen2.shape("square") #Hız göstergemizin yerini oluşturduk.
-pen2.color("white") #Hız yazısı rengini beyaz yaptık.
+pen2.color("purple") #Hız yazısı rengini mor yaptık.
 pen2.penup()
 pen2.hideturtle()
 pen2.goto(200, 220)
@@ -44,7 +44,7 @@ goals = []
 for i in range(maxGoals):
     goals.append(turtle.Turtle())
     goals[i].penup()
-    goals[i].color('yellow')
+    goals[i].color('blue')
     goals[i].shape('turtle')
     goals[i].speed(0)
     goals[i].setposition(random.randint(-300, 300), random.randint(-300, 300))
