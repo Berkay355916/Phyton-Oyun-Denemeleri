@@ -26,17 +26,9 @@
          
 
 
-                                                   CARPLAY
-
-                        Carplay şeçtiğin arabayla pistin tozunu aldığın bir oyun.
-                Ama unutmamalısın ki pistin tozunu almak istersen dikkat etmen gereken şeyler var :
-                              Neler mi ?      Hemen söyleyelim.
-                    Öncelikle seçtiğin arabanın maksimum hızına km başına harcadığı benzin miktarina ve pistlerin uzunluğuna dikkat etmelisin.
-                Bu aynı zamanda bir strateji oyunu ...
-                    Arabanı seç ve diğer rakiplerini ez yarışları 1.bitir.
-                                YA DA .....
+                                                   
                             
-                    YENİLMEYE HAZIR OL.
+                    
 
 
 
